@@ -1,0 +1,48 @@
+Source: dtk6log
+Section: libs
+Priority: optional
+Maintainer: Debian Deepin Packaging Team <pkg-deepin-devel@lists.alioth.debian.org>
+Uploaders:
+ Boyuan Yang <byang@debian.org>,
+Build-Depends:
+ cmake,
+ debhelper-compat ( =13),
+ libspdlog-dev,
+ libsystemd-dev,
+ pkgconf,
+ qt6-base-private-dev,
+Standards-Version: 4.7.0
+Homepage: https://github.com/linuxdeepin/dtklog
+Vcs-Git: https://salsa.debian.org/pkg-deepin-team/dtklog.git
+Vcs-Browser: https://salsa.debian.org/pkg-deepin-team/dtklog
+Description: Simple, convenient and thread-safe C++ Qt6 logger library
+ Dtklog provides a simple, convenient and thread-safe logger for Qt6-based
+ C++ applications.
+
+Package: libdtk6log0
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Breaks:
+ libdtk6log,
+Replaces:
+ libdtk6log,
+Provides:
+ libdtk6log,
+Multi-Arch: same
+Description: ${source:Synopsis} (shared library)
+ ${source:Extended-Description}
+ .
+ This package contains the shared libraries.
+
+Package: libdtk6log-dev
+Architecture: any
+Section: libdevel
+Depends:
+ libdtk6log0 (= ${binary:Version}),
+ ${misc:Depends},
+Description: ${source:Synopsis} (development files)
+ ${source:Extended-Description}
+ .
+ This package contains the library development files.

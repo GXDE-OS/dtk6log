@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/default.mk
+
+VERSION = $(DEB_VERSION_UPSTREAM)
+PACK_VER = $(shell echo $(VERSION) | awk -F'[+_~-]' '{print $$1}')
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DDLOG_VERSION=$(PACK_VER) -DBUILD_WITH_SYSTEMD=ON -DBUILD_WITH_QT6=ON

@@ -1,0 +1,5 @@
+dtk6log (0.0.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #1090334)
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 16 Dec 2024 18:36:15 -0500
