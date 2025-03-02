@@ -1,3 +1,10 @@
+dtk6log (0.0.2-2) unstable; urgency=medium
+
+  * debian/control: Limit package architecture to linux-any.
+  * debian/control: Fix Vcs-* and Homepage field.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 02 Mar 2025 12:35:21 -0500
+
 dtk6log (0.0.2-1) unstable; urgency=medium
 
   * Initial release. (Closes: #1090338)
