@@ -1,3 +1,9 @@
+dtk6log (0.0.5-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 10 Aug 2025 19:14:57 -0400
+
 dtk6log (0.0.2-2) unstable; urgency=medium
 
   * debian/control: Limit package architecture to linux-any.
