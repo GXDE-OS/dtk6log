@@ -1,6 +1,6 @@
-# DtkLog
+# Dtk6Log
 
-Simple, convinient and thread safe logger for Qt-based C++ apps
+Simple, convinient and thread safe logger for Qt6-based C++ apps
 
 ## Short example
 
@@ -28,18 +28,18 @@ int main(int argc, char *argv[])
 }
 ```
 
-## Adding DtkLog to your project
+## Adding Dtk6Log to your project
 
 Add this repo as a git submodule to your project. 
 
 
 Include it to your CMakeLists.txt file:
 ```cmake
-find_package(DtkLog REQUIRED)
+find_package(Dtk6Log REQUIRED)
 ...
 
 ...
-TARGET_LINK_LIBRARIES(${your_target} ... Dtk::Log)
+TARGET_LINK_LIBRARIES(${your_target} ... Dtk6::Log)
 ```
 
 Include `dloghelper.h` and one or several appenders of your choice:

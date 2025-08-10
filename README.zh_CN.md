@@ -1,6 +1,6 @@
-# DtkLog
+# Dtk6Log
 
-`DtkLog` 是基于 `Qt5` 的 `C++`` 应用的简单、便捷、线程安全日志库
+`Dtk6Log` 是基于 `Qt6` 的 `C++`` 应用的简单、便捷、线程安全日志库
 
 ## 简单示例
 
@@ -28,15 +28,15 @@ int main(int argc, char *argv[])
 }
 ```
 
-## 项目中引入 DtkLog 
+## 项目中引入 Dtk6Log 
 
 CMakeLists.txt 文件:
 ```cmake
-find_package(DtkLog REQUIRED)
+find_package(Dtk6Log REQUIRED)
 ...
 
 ...
-TARGET_LINK_LIBRARIES(${your_target} ... Dtk::Log)
+TARGET_LINK_LIBRARIES(${your_target} ... Dtk6::Log)
 ```
 
 包含 `dloghelper.h` 然后根据需要的 appender 包含头文件:
