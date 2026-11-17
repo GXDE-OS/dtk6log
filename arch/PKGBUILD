@@ -1,4 +1,4 @@
-pkgname=dtk6log-git
+pkgname=gxde-dtk6log
 pkgver=0.0.6
 pkgrel=1
 pkgdesc='DTK6 log modules'
@@ -7,8 +7,9 @@ url="https://github.com/GXDE-OS/dtk6log"
 license=('LGPL-2.1-or-later')
 depends=('qt6-base' 'spdlog' 'fmt' 'systemd-libs' 'libgcc' 'libstdc++' 'glibc')
 makedepends=('git' 'cmake' 'ninja')
-provides=("dtk6log=$pkgver")
-conflicts=('dtk6log')
+provides=("dtk6log=$pkgver" "dtk6log-git=$pkgver")
+conflicts=('dtk6log' 'dtk6log-git')
+replaces=('dtk6log-git')
 groups=('deepin-git')
 source=()
 sha512sums=()
